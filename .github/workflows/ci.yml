@@ -1,0 +1,19 @@
+name: Catalogue CICD
+run-name: Catalogue CICD
+on: [push]
+jobs:
+  ci:
+    uses: raghudevopsb82/github-reusable-actions/.github/workflows/ci.yml@main
+    with:
+      component: catalogue
+
+  deploy:
+    needs: ci
+    uses: raghudevopsb82/github-reusable-actions/.github/workflows/deploy.yml@main
+    with:
+      component: catalogue
+
+
+
+
+
