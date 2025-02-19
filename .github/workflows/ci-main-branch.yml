@@ -1,5 +1,5 @@
-name: Cart CICD - Main Branch
-run-name: Cart CICD - Main Branch
+name: Catalogue CICD - Main Branch
+run-name: Catalogue CICD - Main Branch
 on:
   push:
     branches:
